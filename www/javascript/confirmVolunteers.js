@@ -45,11 +45,11 @@ firebase.auth().onAuthStateChanged(function(user) {
         $('input[type=checkbox]').each(function () {
           confirmedList.push($(this).attr("id"));
         });
+        var volunteersNotConfirmed=doc.data().volunteersNotConfirmed;
         confirmedList.forEach(function(eachPerson){
           db.collection("Users").where("email", "==", eachPerson)
           .get()
           .then(function(querySnapshot) {
-            var volunteersNotConfirmed=doc.data().volunteersNotConfirmed;
             querySnapshot.forEach(function(doc3) {
               var newPoints=doc3.data().points+doc.data().pointsGained;
               volunteersNotConfirmed.splice(volunteersNotConfirmed.indexOf(eachPerson),1);
@@ -59,6 +59,8 @@ firebase.auth().onAuthStateChanged(function(user) {
             });
             return db.collection("Events").doc(doc.id).update({
               volunteersNotConfirmed: volunteersNotConfirmed
+            }).then(function() {
+              window.location.replace("eventsManagement.html");
             })
           })
         })
