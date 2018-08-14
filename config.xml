@@ -13,7 +13,7 @@
     <author email="hongsendu@gmail.com" href="https://phonegap.com">
         ShelterLinks Team
     </author>
-    
+    <icon src="icon.png" />
     <preference name="phonegap-version" value="cli-8.0.0" />
     <plugin name="phonegap-plugin-barcodescanner" spec="8.0.0"/>
     <gap:plugin name="cordova-plugin-whitelist" source="npm" />
