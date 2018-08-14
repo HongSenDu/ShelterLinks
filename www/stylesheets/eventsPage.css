@@ -30,6 +30,10 @@ html, body {
   margin-top:20px;
   border-radius: 15px 15px 15px 15px;
 }
+.myEvent:hover{
+  filter: brightness(0.7);
+}
+
 .eventInformation {
   position: relative;
   width: 100%;
