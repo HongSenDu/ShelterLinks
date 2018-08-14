@@ -1,23 +1,23 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget xmlns   = "http://www.w3.org/ns/widgets"
     xmlns:gap   = "http://phonegap.com/ns/1.0"
-    id          = "com.shelterlinks.shelterlinks"
-    versionCode = "10"
-    version     = "1.0.0" >
+    id          = "com.shelterlinksforshelters.shelterlinksforshelters"
+    versionCode = "11"
+    version     = "2.0.0" >
 
     <name>ShelterLinks For Shelters</name>
     <description>
         
     </description>
     
-    <author email="shelterlinksapp@gmail.com" href="https://phonegap.com">
+    <author email="hongsendu@gmail.com" href="https://phonegap.com">
         ShelterLinks Team
     </author>
     
     <preference name="phonegap-version" value="cli-8.0.0" />
+    <plugin name="phonegap-plugin-barcodescanner" spec="8.0.0"/>
     <gap:plugin name="cordova-plugin-whitelist" source="npm" />
     <access origin="*" />
     <allow-navigation href="*" />
     <allow-intent href="*" />
-    <plugin name="phonegap-plugin-barcodescanner" spec="8.0.0"/>
 </widget>
