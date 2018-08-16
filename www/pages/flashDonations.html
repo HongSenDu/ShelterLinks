@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title> ShelterLinks </title>
   <link rel="stylesheet" href="../stylesheets/bootstrap.min.css">
-  <link rel="stylesheet" href="../stylesheets/articles.css" type="text/css"/>
+  <link rel="stylesheet" href="../stylesheets/flashDonations.css" type="text/css"/>
   <link rel="stylesheet" href="../stylesheets/index.css" type="text/css"/>
   <link rel="stylesheet" href="../stylesheets/all.css" type="text/css"/>
   <link href="https://fonts.googleapis.com/css?family=Advent+Pro|Cardo|Enriqueta|Karla|Montserrat|Open+Sans|PT+Sans|Raleway|Roboto+Condensed|Sorts+Mill+Goudy|Source+Sans+Pro|Titillium+Web|Ubuntu|Crimson+Text|Muli|Nanum+Gothic|Questrial|Quicksand|Source+Serif+Pro|Work+Sans" rel="stylesheet">
@@ -36,12 +36,36 @@
       <img class="smallLogo" src="../images/smallLogo.png"/>
       <a href="profiles.html"><img src="../images/white.png" id="myimg2"/></a>
     </div>
-    <a href="https://www.paypal.com/donate/?token=8fwhfPwqfzEoL2s-QxpWcK6K98lZlNMyKPElSxNgb3gir-f-MvL8N-gau7tWJPCD8MR1e0&country.x=US&locale.x=US">Donate</a>
+    <button type="button" id="testing" class="btn btn-primary">Test Button</button>
+    <div id="donations">
+    </div>
+    <div class="info">
+    <h1 class="flash"> Flash Donation!</h1>
+    <h6 class="hosted">Hosted by: <span id="hosted"></span></h6>
+    <h6 class="time">Time Remaining: <span id="remaining"></span></h6>
+    <h6 class="total">Total Amount Donated: <span id="totalAmount"></span></h6>
+  </div>
+    <ul class="nav nav-pills mb-6 w-100" id="pills-tab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-donate" role="tab" aria-controls="pills-home" aria-selected="true">Donations</a>
+  </li>
+  <li class="nav-item boi">
+    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-leaderboard" role="tab" aria-controls="pills-profile" aria-selected="false">Leaderboard</a>
+  </li>
+
+</ul>
+<div class="tab-content" id="pills-tabContent">
+  <div class="tab-pane fade show active" id="pills-donate" role="tabpanel" aria-labelledby="pills-home-tab"><div id="donateNow"></div></div>
+  <div class="tab-pane fade" id="pills-leaderboard" role="tabpanel" aria-labelledby="pills-profile-tab"><div id="leaderboard"></div></div>
+</div>
+
+    <img id="circle">
+    </img>
     <div class="icon-bar">
       <a href="homepage.html"><i class="fas fa-home"></i></a>
       <a href="eventsPage.html"><i class="fa fa-calendar"></i></a>
       <a href="sheltercoins.html"><i class="fas fa-link"></i></a>
-      <a href="#"><i class="fas fa-donate"></i></a>
+      <a style="color:#ba3b21;" href="#"><i class="fas fa-donate"></i></a>
     </div>
 </body>
 
@@ -50,6 +74,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="../javascript/bootstrap.min.js"></script>
     <script src="../javascript/index.js"></script>
-    <script src="../javascript/articles.js"></script>
+    <script src="../javascript/flashDonations.js"></script>
   </body>
   </html>

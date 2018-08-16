@@ -23,7 +23,12 @@ var email;
             var ourData=doc.data();
             company=ourData.business;
             var today = new Date();
-            var time=today.getHours()+":"+today.getMinutes();
+            var min=today.getMinutes();
+            if (min<10)
+            {
+              min="0"+min;
+            }
+            var time=today.getHours()+":"+min;
             if (time.substring(0,time.indexOf(":"))<13){
               time+="AM";
             }else{

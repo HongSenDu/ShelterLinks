@@ -203,3 +203,11 @@ a:hover{
   margin-top:-500px;
   margin-left:5%;
 }
+#signedUp{
+  background-color:#ba3b21;
+  border:none;
+  color:white;
+}
+#signedUp:hover{
+  background-color:#0060CF;
+}

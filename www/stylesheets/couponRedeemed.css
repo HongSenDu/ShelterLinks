@@ -22,22 +22,24 @@ html, body {
   margin-left:10%;
   margin-right:auto;
   margin-top:30px;
-  height:200px;
+  max-height:300px;
 }
 .shelterlinkLogo{
   width:40%;
   height:50px;
   color:#B10100;
+    margin-bottom:100px;
 }
 .smallLogos{
   width:10%;
   height:50px;
   margin-left:20px;
+    margin-bottom:100px;
 }
 .logo{
   margin-right:auto;
   margin-left:28%;
-  margin-top:7.5%;
+  margin-top:6.5%;
 }
 .show{
   width:70%;
