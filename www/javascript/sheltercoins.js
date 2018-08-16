@@ -41,7 +41,7 @@ firebase.auth().onAuthStateChanged(function(user) {
     console.log("Error getting documents: ", error);
   });
 
-  db.collection("Coupons").where("isOn", "==", true)
+  db.collection("Coupons").where("isOn", "==", true).orderBy("business")
   .get()
   .then(function(querySnapshot) {
     querySnapshot.forEach(function(doc) {

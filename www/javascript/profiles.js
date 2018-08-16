@@ -129,8 +129,8 @@ var days=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"
           type="shelter";
           $("#nav-bar").append("<div class=\"icon-bar\">"+
             "<a href=\"homepage.html\"><i class=\"fas fa-home\"></i></a>"+
-            "<a href=\"createEvents.html\"><i class=\"fa fa-calendar\"></i></a>"+
-            "<a href=\"eventsManagement.html\"><i class=\"fas fa-link\"></i></a>"+
+            "<a href=\"createEvents.html\"><i class=\"far fa-calendar-plus\"></i></a>"+
+            "<a href=\"eventsManagement.html\"><i class=\"fa fa-tasks\"></i></a>"+
             "<a href=\"#\"><i class=\"fas fa-donate\"></i></a>"+
           "</div>")
         })
