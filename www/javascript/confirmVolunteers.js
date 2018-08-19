@@ -33,6 +33,7 @@ firebase.auth().onAuthStateChanged(function(user) {
         .get()
         .then(function(querySnapshot) {
           querySnapshot.forEach(function(doc2) {
+            console.log("boi");
             var individualPhoto=doc2.data().photoURL;
             volunteersString = "<div class=\"eachVolunteer\"><img class=\"imagePhoto\" src=\""+individualPhoto+"\" /><h6 class=\"name\">"+doc2.data().name+"</h6>"+
             "<label class=\"container\"><input id=\""+doc2.data().email+"\" type=\"checkbox\" ><span class=\"checkmark\"></span></label></div>";

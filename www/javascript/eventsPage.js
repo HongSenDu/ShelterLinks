@@ -41,6 +41,37 @@ var idOfUser;
   }
 
   today = mm + '/' + dd + '/' + yyyy;
+  db.collection("Events").where("isOn", "==", true)
+  .get()
+  .then(function(querySnapshot) {
+    querySnapshot.forEach(function(doc) {
+      if (!(doc.data().endDate=="Ongoing")&&(doc.data().endDate<today)){
+        db.collection("Events").doc(doc.id).delete().then(function() {
+        }).catch(function(error) {
+          console.error("Error removing document: ", error);
+        });
+        db.collection("Users").where("email","==",email)
+        .get()
+        .then(function(querySnapshot) {
+          querySnapshot.forEach(function(doc2) {
+            var eventsGoing=doc2.data().eventsGoing;
+            if (eventsGoing.indexOf(doc.id)>=0){
+              eventsGoing.splice(eventsGoing.indexOf(doc.id),1);
+            }
+            return db.collection("Users").doc(doc2.id).update({
+              eventsGoing: eventsGoing
+            })
+            .then(function() {
+              location.reload();
+            })
+          });
+        });
+      }
+    });
+  })
+  .catch(function(error) {
+    console.log("Error getting documents: ", error);
+  });
   db.collection("Events").where("isOn", "==", true).orderBy("startDate")
   .get()
   .then(function(querySnapshot) {
@@ -109,37 +140,7 @@ var idOfUser;
   .catch(function(error) {
     console.log("Error getting documents: ", error);
   });
-  db.collection("Events").where("isOn", "==", false)
-  .get()
-  .then(function(querySnapshot) {
-    querySnapshot.forEach(function(doc) {
-      if ((doc.data().endDate!=="Ongoing")&&(doc.data().endDate<today)){
-        db.collection("Events").doc(doc.id).delete().then(function() {
-        }).catch(function(error) {
-          console.error("Error removing document: ", error);
-        });
-        db.collection("Users").where("email","==",email)
-        .get()
-        .then(function(querySnapshot) {
-          querySnapshot.forEach(function(doc2) {
-            var eventsGoing=doc2.data().eventsGoing;
-            if (eventsGoing.indexOf(doc.id)>=0){
-              eventsGoing.splice(eventsGoing.indexOf(doc.id),1);
-            }
-            return db.collection("Users").doc(doc2.id).update({
-              eventsGoing: eventsGoing
-            })
-            .then(function() {
-              location.reload();
-            })
-          });
-        });
-      }
-    });
-  })
-  .catch(function(error) {
-    console.log("Error getting documents: ", error);
-  });
+
 
 
   document.onclick = function(event) {

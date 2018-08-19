@@ -70,6 +70,7 @@ var db = firebase.firestore();
             var points=doc.data().pointsGained;
             volunteerArray=doc.data().volunteersGoing;
             var volunteersGoing=doc.data().volunteersGoing;
+            var volunteersNotConfirmed=doc.data().volunteersNotConfirmed;
             var volunteerGoingString="";
             var displayVolunteers="";
             volunteersGoing.forEach(function(volunteerGo){
@@ -128,7 +129,6 @@ var db = firebase.firestore();
                       eventsGoing: eventsGoing,
                     })
                     .then(function() {
-                      var volunteersNotConfirmed=doc.data().volunteersNotConfirmed;
                       volunteersNotConfirmed.splice(volunteersNotConfirmed.indexOf(email),1);
                       volunteerArray.splice(volunteerArray.indexOf(email),1);
                       if(!(real=="No Limit")){
