@@ -169,7 +169,7 @@ firebase.auth().onAuthStateChanged(function(user) {
         .get().then(function(querySnapshot) {
           querySnapshot.forEach(function(doc1) {
             var image=doc1.data().image;
-            $("#bubble").append("<div id=\"theAnim\" style=\"display:block;animation:animation 70080ms linear both;\"><img src=\""+image+"\" id=\"circle\"/><h1 id=\"names\">"+name+"</h1><h6 id=\"appear\">Donated $"+doc1.data().amountDonated+"</h6></div>");
+            $("#bubble").append("<div id=\"theAnim\" style=\"display:block;animation:animation 70080ms linear both;\"><img src=\""+image+"\" id=\"circle\"/><h1 id=\"names\">"+doc1.data().name+"</h1><h6 id=\"appear\">Donated $"+doc1.data().amountDonated+"</h6></div>");
             var counter=1;
             document.getElementById("leaderboard").innerHTML="";
             var volunteersString="";
