@@ -13,7 +13,6 @@ html, body {
   padding-top:5px;
   padding-bottom:0px;
   height:100%;
-
 }
 #yourEvent{
     padding-bottom:80px;
@@ -35,6 +34,9 @@ html, body {
   margin-top:10px;
   border-radius: 15px 15px 15px 15px;
   margin-bottom:30px;
+}
+.myEvent:hover{
+  filter:brightness(0.7);
 }
 .eventInformation {
   position: relative;

@@ -102,7 +102,7 @@ var db = firebase.firestore();
             "<h6 class=\"eventTime\">"+ dayOfWeek+", "+month+" "+day+", "+dateString+"<span class=\"nope\">"+startDate+"</span></h6>" +
             "<h5 class=\"address\">" +address+", "+borough+", New York City, "+zipCode + "</h5>"+
             "<h5 class=\"pointsAvaliable\">"+points+" ShelterCoins avaliable</h5>"+
-            "<div class=\"tags\">"+tagString+"</div></div><br><br><hr>"+
+            "<div class=\"tags\">"+tagString+"</div></div><br><hr>"+
             "<div class=\"eachInfo\"><h6 class=\"knows\">Description<br></h6><p class=\"info\">"+doc.data().description+"</p></div>"+
             "<div class=\"eachInfo\"><h6 class=\"knows\">Duties<br></h6><p class=\"info\">"+doc.data().duties+"</p></div>"+
             "<div class=\"eachInfo\"><h6 class=\"knows\">Requirements<br></h6><p class=\"info\">The Minimum Age is "+doc.data().minAge+". "+doc.data().requirements+"</p></div>"+

@@ -193,5 +193,5 @@ function timeConverter(time){
 function pointsConverter(time1,time2){
   var firstPart=parseInt(time1.substring(0,2));
   var secondPart=parseInt(time2.substring(0,2));
-  return ((secondPart-firstPart)*100);
+  return ((secondPart-firstPart)*150);
 }

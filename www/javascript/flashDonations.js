@@ -32,7 +32,7 @@ firebase.auth().onAuthStateChanged(function(user) {
         idOfUser=doc.id;
         type="user";
         $("#nav-bar").append("<div class=\"icon-bar\">"+
-          "<a style=\"color:#ba3b21;\" href=\"homepage.html\"><i class=\"fas fa-home\"></i></a>"+
+          "<a href=\"homepage.html\"><i class=\"fas fa-home\"></i></a>"+
           "<a href=\"eventsPage.html\"><i class=\"fa fa-calendar\"></i></a>"+
           "<a href=\"sheltercoins.html\"><i class=\"fas fa-link\"></i></a>"+
           "<a style=\"color:#ba3b21;\" href=\"flashDonations.html\"><i class=\"fas fa-donate\"></i></a>"+
