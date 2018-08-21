@@ -27,25 +27,6 @@
   };
   firebase.initializeApp(config);
   </script>
-  <script src="https://cdn.firebase.com/libs/firebaseui/3.1.1/firebaseui.js"></script>
-  <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.1.1/firebaseui.css" />
-  <script type="text/javascript">
-  // FirebaseUI config.
-  var uiConfig = {
-    signInSuccessUrl: "events.html",
-    signInOptions: [
-      // Leave the lines as is for the providers you want to offer your users.
-      firebase.auth.GoogleAuthProvider.PROVIDER_ID,
-    ],
-    // Terms of service url.
-    tosUrl: '<your-tos-url>'
-  };
-
-  // Initialize the FirebaseUI Widget using Firebase.
-  var ui = new firebaseui.auth.AuthUI(firebase.auth());
-  // The start method will wait until the DOM is loaded.
-  ui.start('#firebaseui-auth-container', uiConfig);
-  </script>
 </head>
 <body>
   <video autoplay muted loop id="myVideo">
@@ -57,12 +38,10 @@
     <div class="makeAccount"><input id="txtEmail" type="email" placeholder="Email"></div><br><br>
 
     <input id="txtPassword" type="password" placeholder="Password">
-
-    <button id="btnLogin" class="btn btn-primary btn-lg">Sign In</button><br>
-    <div class="google"><div id="firebaseui-auth-container"></div></div>
+    <button id="btnLogin" class="btn btn-primary btn-lg">Sign In</button><br><br><br>
     <a class="account" href="makeAccount.html">Create an Account</a>
     <br>
-    <br>
+    <br><br>
     <a class="account" href="shelterSignUp.html">Sign Up as a Shelter</a>
   </div>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

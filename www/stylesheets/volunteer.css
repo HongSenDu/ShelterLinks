@@ -31,7 +31,7 @@ input {
   color:white;
 }
 .makeAccount{
-  padding-top:10vh;
+  padding-top:12vh;
   padding-bottom:5vh;
   text-decoration: none;
 }
@@ -45,16 +45,12 @@ input {
 .btn-primary{
   width:50vh;
   padding:15px;
-  margin-top:25px;
+  margin-top:-20px;
   border-radius:300px;
   background-color: #FF5C5C !important;
   border-color:#FF5C5C !important;
 }
-.google{
-  position:relative;
-  top:3vh;
-  padding-bottom:3.5vh;
-}
+
 #myVideo {
     position: fixed;
     right: 0;
@@ -67,19 +63,12 @@ input {
 .account{
   color:white;
   position:relative;
-  font-size:20px;
+  font-size:22.5px;
+  margin-top:50px;
 }
 a, a:hover, a:active, a:visited, a:focus {
     text-decoration:none;
 }
 a:hover{
   color:white;
-}
-.firebaseui-idp-text {
-  font-size:20px !important;
-  text-align:center !important;
-}
-.firebaseui-idp-button{
-  max-width:25vh !important;
-  height:3vh !important;
 }
