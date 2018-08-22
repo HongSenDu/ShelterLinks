@@ -15,9 +15,11 @@
       }
     });
     const btnSignOut=document.getElementById('btnSignOut');
-  btnSignOut.addEventListener('click',e=>{
-    const auth=firebase.auth();
-    auth.signOut();
-    window.location.replace("volunteer.html");
-  });
+    btnSignOut.addEventListener('click',e=>{
+      firebase.auth().signOut().then(function() {
+        window.location.replace("volunteer.html");
+      }, function(error) {
+        console.error('Sign Out Error', error);
+      });
+    });
 }());
