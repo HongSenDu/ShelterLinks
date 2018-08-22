@@ -5,8 +5,9 @@ var auth = firebase.auth();
 (function(){
   const btnSignOut=document.getElementById('btnSignOut');
   btnSignOut.addEventListener('click',e=>{
-    auth.signOut().then(function() {
+    auth.signOut();
+    var x = setTimeOut(function() {
       window.location.replace("volunteer.html");
-    })
+    }, 1000);
   });
 }());
