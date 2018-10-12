@@ -161,3 +161,194 @@ a:hover{
   background-color:#af0710;
   border:none;
 }
+@media only screen and (max-width:414px){
+  #events{
+    padding-top:5px;
+    height:90%;
+  }
+  .dataTable {
+    position: relative;
+    left: 5%;
+    right: 5%;
+  }
+  .myEvent {
+    width: 94%;
+    margin: 5px;
+    text-decoration: none;
+    color: inherit;
+    background-color: white;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:10px;
+    margin-bottom:10px;
+    border-radius: 15px 15px 15px 15px;
+  }
+  .myEvent:hover{
+    filter: brightness(0.7);
+  }
+
+  .eventInformation {
+    position: relative;
+    width: 100%;
+    height:325px;
+  }
+  .eventImageDiv {
+    width:100%;
+    margin-left: auto;
+    margin-right:auto;
+    text-align:center;
+    overflow: hidden;
+  }
+  .eventImage {
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+    height:200px;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+  .inlineboi{
+    margin-bottom:20px;
+  }
+  .eventName {
+    position:relative;
+    top: -17.5px;
+    left:20%;
+    font-size:22.5px;
+    font-family:'Advent+Pro',sans-serif;
+    color:#af0710;
+    width:80%;
+    word-wrap: break-word;
+    font-weight: bold;
+  }
+  .eventTime{
+    position:relative;
+    text-align: left;
+    top: -25px;
+    left:20%;
+    font-size:12px;
+    width:90%;
+    word-wrap: break-word;
+    color:#5b5d60;
+    font-family:'Work+Sans',sans-serif;
+  }
+  .eventOrg {
+    position:relative;
+    top: -36px;
+    left:20%;
+    font-size:12px;
+    width:90%;
+    word-wrap: break-word;
+    color:#5b5d60;
+    font-family:'Work+Sans',sans-serif;
+  }
+
+  .eventVolunteers {
+    position: relative;
+    margin-top:-372.5px;
+    left:0px;
+    width: 100%;
+    word-wrap: break-word;
+    z-index:100;
+    color:white;
+    font-size:12px;
+    font-family:'Work+Sans',sans-serif;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.5), 6px 6px 6px rgba(0,0,0,0.2);
+    padding:10px;
+    border-radius: 15px;
+  }
+  #volunteerNum {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    font-size: 3em;
+  }
+  .tagsDiv {
+    height: 30px;
+    width: 90%;
+    left: 5%;
+    padding-bottom:100px;
+  }
+  .eventTagTable {
+    width: 100%;
+    overflow-x: scroll;
+  }
+  .eventsLink{
+    text-decoration: none;
+    color: inherit;
+  }
+  a:hover{
+    text-decoration: none;
+    color: inherit;
+  }
+  .easyDate{
+    color:darkblue;
+    position:relative;
+    top:-75px;
+    width:20%;
+    text-align:center;
+    font-size:20px;
+    font-family:'Work+Sans',sans-serif;
+  }
+  .eventTag {
+    text-align: center;
+    border-radius:40px;
+    width:95%;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius:15px;
+    padding-left:10px;
+    padding-top:2.5px;
+    padding-bottom:2.5px;
+    padding-right:10px;
+    background-color: #af0710;
+    color: white;
+    width: 95%;
+    height:25px;
+    margin-right:10px;
+    margin-bottom:10px;
+    font-size:14px;
+  }
+  .tags{
+    position:relative;
+    font-family:'Work+Sans',sans-serif;
+    width:95%;
+    margin-left:10px;
+    text-align:left;
+    top:229px;
+    color:black;
+    overflow-x: scroll;
+    white-space: nowrap;
+    overflow-y:hidden;
+  }
+
+  .nope{
+    display:none;
+  }
+  .volunteer{
+    margin-top:-100px;
+  }
+  .update{
+    margin-top:35px;
+    margin-left:5%;
+    width:150px;
+    font-size:15px;
+    background-color:#af0710;
+    border:none;
+  }
+  .confirm{
+    margin-top:35px;
+    margin-left:5%;
+    width:150px;
+    background-color:#af0710;
+    border:none;
+    font-size:15px;
+  }
+  #yourEvents{
+    font-size:25px;
+    color:#af0710;
+    margin-left:3%;
+    padding-top:20px;
+  }
+}

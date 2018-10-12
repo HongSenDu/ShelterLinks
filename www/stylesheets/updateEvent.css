@@ -92,3 +92,101 @@ label{
 input,textarea,#borough{
   border:navy 1px solid !important;
 }
+@media only screen and (max-width:414px){
+  .container{
+    width:90%;
+    font-size:15px;
+  }
+  .creator{
+    background-repeat: repeat;
+    background-position: right;
+    background-size:cover;
+  }
+  .event{
+    text-align: center;
+    font-size:25px;
+    position:relative;
+    top:5vh;
+  }
+  #nameOfEvent{
+  }
+  #date{
+    float:left;
+  }
+
+  #age{
+    float:right;
+    width:32%;
+  }
+  #ongoing{
+  }
+
+  .form-check{
+    display:inline-block;
+    margin-left:20px;
+  }
+  .form-check-input{
+    margin-top:10px;
+  }
+  .makeAccount{
+    padding-top:5vh;
+    padding-bottom:10vh;
+    color:black;
+
+  }
+  .inputs{
+    position:relative;
+    top:10vh;
+  }
+  #btnSubmit{
+    width:200px;
+    padding:0px;
+    margin-top:25px;
+    margin-bottom:100px;
+    height:40px;
+    text-align: center;
+  }
+
+  .center{
+    text-align:center;
+  }
+
+  .uploadPhoto{
+    position:absolute;
+    margin-left:auto;
+    margin-right:auto;
+    width:85%;
+    top:15%;
+    left:10%;
+    border:black solid 1px;
+    height:200px;
+  }
+
+  #myimg{
+    position:relative;
+    text-align:center;
+    width:95%;
+    margin-left:2.5%;
+    margin-bottom:0;
+    height:200px;
+    margin-top:5%;
+  }
+  label{
+    color:black;
+  }
+  .form-check-inline{
+    display:inline-block;
+  }
+  .boi2{
+    margin-left:39px;
+  }
+  .boi3{
+    margin-left:42px;
+  }
+  ::placeholder{
+    font-size:15px;
+  }
+  input,textarea,#borough{
+    border:navy 1px solid !important;
+  }
+}

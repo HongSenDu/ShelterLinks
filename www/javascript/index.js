@@ -5,9 +5,10 @@ var auth = firebase.auth();
 (function(){
   const btnSignOut=document.getElementById('btnSignOut');
   btnSignOut.addEventListener('click',e=>{
-    auth.signOut();
-    var x = setTimeOut(function() {
+    firebase.auth().signOut().then(function() {
       window.location.replace("volunteer.html");
-    }, 1000);
+    }, function(error) {
+      console.error('Sign Out Error', error);
+    });
   });
 }());
