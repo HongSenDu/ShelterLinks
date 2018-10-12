@@ -100,3 +100,96 @@ a, a:hover{
   overflow-y:hidden;
   overflow:hidden;
 }
+@media only screen and (max-width: 414px){
+  .topBar{
+    display:inline;
+    width:100%;
+    height:7.5%;
+    box-shadow:0px 7px 10px lightgrey;
+    background-color:white;
+  }
+
+  .shelterlinks{
+    position:relative;
+    top:6.5px;
+    left:10px;
+    font-size:2.5em;
+    height:25.5px;
+    width:120px;
+  }
+
+  .smallLogo{
+    height:40px;
+    width:40px;
+    position:relative;
+    top:4.5px;
+    left:11.5%;
+  }
+
+
+  .eventsPage{
+    position:absolute;
+    bottom:0;
+    left:0;
+    color:white;
+  }
+
+  .icon-bar {
+      position:fixed;
+      width: 100%;
+      background-color: white;
+      overflow:inherit;
+      bottom:0;
+      left:0;
+      border-top:1px lightgrey solid;
+      margin-top:0px;
+      z-index:100;
+      text-rendering: auto;
+      height:7.5%;
+      overflow-y: hidden;
+  }
+
+  .icon-bar a{
+      float: left;
+      width:25%;
+      text-align: center;
+      padding: 12px 0;
+      transition: all 0.3s ease;
+      font-size: 25px;
+      color:grey;
+      text-rendering: auto;
+      margin-top:-6px;
+  }
+  .icon-bar img{
+    height:100px;
+    width:100px;
+    color:black;
+  }
+  .icon-bar a:hover {
+  }
+  .account{
+    position:relative;
+    float:right;
+    top:27px;
+    right:30px;
+    font-size:36px;
+  }
+
+  a, a:hover{
+    text-decoration: none;
+    color: inherit;
+  }
+  #myimg2{
+    position:relative;
+    top:6px;
+    left:42.5%;
+    text-align:center;
+    width:35px;
+    border-radius:50%;
+    border:solid 1px;
+    height:35px;
+    overflow-y:hidden;
+    overflow:hidden;
+  }
+
+}

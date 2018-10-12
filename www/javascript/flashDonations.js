@@ -194,7 +194,6 @@ firebase.auth().onAuthStateChanged(function(user) {
                 document.getElementById("totalAmount").innerHTML="$"+totalDonated;
               })
             });
-            db.collection("Donations").doc(doc.id).collection("toAppear").doc(doc1.id).delete();
           });
         });
       }, 1000);

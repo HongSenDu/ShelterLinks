@@ -203,3 +203,221 @@ a:hover{
   background: linear-gradient(to top, #ffffff 0%, #ccffff 100%);
   height:100%;
 }
+@media only screen and (max-width: 414px){
+  .myEvent{
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+    padding-top:20px;
+  }
+  .eventInformation {
+    position: relative;
+    width: 100%;
+  }
+  .eventImageDiv {
+    width:100%;
+    margin-left: auto;
+    margin-right:auto;
+    text-align:center;
+    overflow: hidden;
+  }
+  .eventImage {
+    width: 100%;
+    height:225px;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .eventName {
+    position:relative;
+    top: -90px;
+    font-size:25px;
+    margin-left:2.5%;
+    font-family:'Advent+Pro',sans-serif;
+    color:white;
+    width:90%;
+    word-wrap: break-word;
+    font-weight: bold;
+    text-shadow: 3px 3px 3px rgba(0,0,0,1), 15px 15px 15px rgba(0,0,0,0.2);
+  }
+  .eventTime{
+    position:relative;
+    text-align: left;
+    top: -80px;
+    font-size:15px;
+    width:90%;
+    word-wrap: break-word;
+    color:#5b5d60;
+    font-family:'Work+Sans',sans-serif;
+    margin-left:5%;
+  }
+  .eventOrg {
+    position:relative;
+    top: -80px;
+    font-size:20px;
+    width:90%;
+    word-wrap: break-word;
+    font-family:'Work+Sans',sans-serif;
+    margin-left:5%;
+    color:black;
+    text-decoration: underline;
+  }
+  .address{
+    margin-left:5%;
+    margin-top:-85px;
+    color:#5b5d60;
+    font-size:15px;
+  }
+  .eventVolunteers {
+    position: relative;
+    left:0px;
+    width: 41%;
+    word-wrap: break-word;
+    z-index:100;
+    color:white;
+    font-size:15px;
+    font-family:'Work+Sans',sans-serif;
+    text-shadow: 3px 3px 3px rgba(0,0,0,.6), 15px 15px 15px rgba(0,0,0,0.2);
+    padding:10px;
+    border-radius: 15px;
+  }
+  #volunteerNum {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    font-size: 3em;
+  }
+  .tagsDiv {
+    height: 30px;
+    width: 90%;
+    left: 5%;
+    padding-bottom:100px;
+  }
+  .eventTagTable {
+    width: 100%;
+    overflow-x: scroll;
+  }
+  .eventsLink{
+    text-decoration: none;
+    color: inherit;
+  }
+  .hosted{
+    position:relative;
+    color:#404040;
+    margin-left:5%;
+    font-size:20px;
+    margin-top:-20px;
+  }
+  a:hover{
+    text-decoration: none;
+    color: inherit;
+  }
+  .easyDate{
+    text-align:center;
+    font-size:40px;
+    font-family:'Work+Sans',sans-serif;
+  }
+  .eventTag {
+    text-align: center;
+    border-radius:40px;
+    width:95%;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius:15px;
+    padding-left:10px;
+    padding-top:2.5px;
+    padding-bottom:2.5px;
+    padding-right:10px;
+    background-color: #af0710;
+    color: white;
+    width: 95%;
+    height:25px;
+    margin-right:10px;
+    margin-bottom:0px;
+    font-size:14px;
+  }
+  .tags{
+    position:relative;
+    font-family:'Work+Sans',sans-serif;
+    width:95%;
+    margin-left:5%;
+    text-align:left;
+    top:10px;
+    color:black;
+    overflow-x: scroll;
+    white-space: nowrap;
+    overflow-y:hidden;
+    margin-bottom:-30px;
+  }
+
+  .nope{
+    display:none;
+  }
+  .pointsAvaliable{
+    color:#5b5d60;
+    margin-left:5%;
+    margin-top:-5px;
+    font-size:15px;
+  }
+  .volunteer{
+    position:fixed;
+    bottom:20px;
+    margin-left:0%;
+  }
+  .volunteered{
+    text-align:center;
+    border-radius:20px;
+    width:300px;
+    height:35px !important;
+  }
+  .knows{
+    margin-left:5%;
+    font-weight:bold;
+    font-size:15px;
+  }
+  .info{
+    margin-left:5%;
+    width:90%;
+    font-size:15px;
+  }
+  .eachInfo{
+    margin-top:20px;
+    margin-bottom:20px;
+    font-size:20px;
+  }
+  .dudu{
+    margin-left:5%;
+    margin-top:-20px;
+  }
+  .voluns{
+    margin-left:5% !important;
+    margin-top:-15px;
+    font-size:15px;
+    font-weight:bold;
+  }
+  #remain{
+    color:darkred;
+  }
+  #displayVolunteers{
+    margin-left:5%;
+    width:100%;
+    height:75px;
+
+  }
+  .imagePhoto{
+    height:50px;
+    width:50px;
+    border-radius:50%;
+    margin-top:10px;
+    margin-left:0%;
+  }
+  #signedUp{
+    background-color:#ba3b21;
+    border:none;
+    color:white;
+  }
+  #signedUp:hover{
+    background-color:#0060CF;
+  }
+}
