@@ -112,10 +112,10 @@ a, a:hover{
   .shelterlinks{
     position:relative;
     top:6.5px;
-    left:10px;
+    left:5px;
     font-size:2.5em;
     height:25.5px;
-    width:120px;
+    width:125px;
   }
 
   .smallLogo{
@@ -123,7 +123,7 @@ a, a:hover{
     width:40px;
     position:relative;
     top:4.5px;
-    left:11.5%;
+    left:8.5%;
   }
 
 
@@ -182,7 +182,7 @@ a, a:hover{
   #myimg2{
     position:relative;
     top:6px;
-    left:42.5%;
+    left:39.5%;
     text-align:center;
     width:35px;
     border-radius:50%;

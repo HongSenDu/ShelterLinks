@@ -97,3 +97,91 @@ html, body {
 
 
 }
+@media only screen and (max-width: 360px){
+  .redeemedHeading{
+    font-size:30px;
+    text-align:center;
+    font-family: 'Shadows+Into+Light', cursive;
+    letter-spacing: 2px;
+    font-weight:bolder;
+    padding-top:30px;
+    color:black;
+  }
+  .couponImage{
+    width:90%;
+    margin-left:5%;
+    margin-right:auto;
+    margin-top:20px;
+    max-height:200px;
+  }
+  .shelterlinkLogo{
+    width:90%;
+    height:50px;
+    color:#B10100;
+      margin-bottom:100px;
+  }
+  .smallLogos{
+    width:20%;
+    height:50px;
+    margin-left:-70px;
+      margin-bottom:100px;
+  }
+  .logo{
+    margin-right:auto;
+    margin-left:28%;
+    margin-top:6.5%;
+  }
+  .show{
+    width:70%;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+    font-size:15px;
+    margin-top:20px;
+    color:#B10100;
+    font-family: 'Quicksand', sans-serif;
+  }
+  .thanks{
+    margin-top:10px;
+    font-size:15px;
+    width:70%;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+    color:#B10100;
+    font-family: 'Quicksand', sans-serif;
+  }
+  .desc{
+    margin-top:0;
+    font-size:20px;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+    width:80%;
+    padding:0px;
+    color:#B10100;
+      font-family: 'Do Hyeon', sans-serif;
+    text-decoration: underline;
+  }
+  .scan{
+    font-size:15px;
+    padding-top:20px;
+    text-align:center;
+    font-family: 'Quicksand', sans-serif;
+  }
+  .full{
+    background: linear-gradient(to bottom left, #e6ffff 0%, #ffffff 100%);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    width:100%;
+    height:90%;
+    margin-top:0px;
+    padding-top:0px;
+  }
+
+  .icon-bar {
+      margin-top:0px !important;
+  }
+
+}
